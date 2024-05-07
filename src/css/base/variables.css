@@ -1,0 +1,8 @@
+:root {
+  --primary-text-color: #121417;
+  --secondary-text-color: rgba(18, 20, 23, 0.5);
+  --primary-brand-color: #4dc274;
+  --secondary-brand-color: #bee8cc;
+  --pressed-state-color: #38ae5f;
+  --white-background-color: #fff;
+}

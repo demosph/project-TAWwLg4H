@@ -1,6 +1,6 @@
+@import url('./base/variables.css');
 @import url('./base/common.css');
 @import url('./base/container.css');
-@import url('./base/variables.css');
 @import url('layout/header.css');
 @import url('layout/hero.css');
 @import url('layout/about.css');
