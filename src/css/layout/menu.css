@@ -12,7 +12,7 @@
   z-index: 999;
   background-color: var(--primary-brand-color);
   transform: translateX(100%);
-  transition: transform 250ms ease-in-out;
+  transition: transform 250ms var(--animation-function);
 }
 
 @media (min-width: 768px) {
@@ -105,4 +105,19 @@
   width: 26px;
   height: 26px;
   fill: rgba(255, 255, 255, 0.8);
+}
+
+.menu-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(18, 20, 23, 0.4);
+  transform: translate(100%);
+  transition: transform 350ms var(--animation-function);
+}
+
+.menu-backdrop.is-open {
+  transform: translateX(0);
 }
