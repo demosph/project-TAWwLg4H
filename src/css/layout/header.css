@@ -50,8 +50,7 @@
     position: relative;
   }
 
-  .nav-link:hover:after,
-  .nav-link:focus:after {
+  .nav-link:after {
     content: '';
     position: absolute;
     left: 0;
@@ -60,7 +59,14 @@
     height: 2px;
     background-color: var(--primary-brand-color);
     border-radius: 2px;
+    opacity: 0;
+    transition: opacity 250ms var(--animation-function);
   }
+}
+
+.nav-link:hover:after,
+.nav-link:focus:after {
+  opacity: 1;
 }
 
 .header-social {
@@ -83,6 +89,7 @@
     padding: 8px;
     width: 44px;
     height: 44px;
+    transition: border 250ms var(--animation-function);
   }
 
   .header-social-link:hover,
@@ -93,9 +100,10 @@
     width: 28px;
     height: 28px;
     fill: rgba(18, 20, 23, 0.8);
+    transition: fill 250ms var(--animation-function);
   }
-  .header-social-link .social-icon:hover,
-  .header-social-link .social-icon:focus {
+  .header-social-link:hover .social-icon,
+  .header-social-link:focus .social-icon {
     fill: rgba(77, 194, 116, 0.8);
   }
 }
