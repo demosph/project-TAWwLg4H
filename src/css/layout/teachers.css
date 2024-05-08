@@ -1,0 +1,43 @@
+.our-teachers {
+    background-color: var(--CLOUD, #F4F4FD);
+    padding: 120px 0px;
+
+    @media (max-width: 1024px) {
+        padding: 108px 0px;
+    } 
+}
+
+.our-teachers-list {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    @media (max-width: 1024px) {
+        flex-wrap: wrap;
+        justify-content: center;
+    } 
+}
+
+.our-teachers-title {
+    text-align: center;
+    margin-bottom: 82px;
+}
+
+.our-teachers-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+    background-color: var(--color-white);
+
+}
+
+
+.teachers_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 32px 0;
+}
