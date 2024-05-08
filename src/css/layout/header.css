@@ -2,24 +2,35 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 8px;
-}
-
-@media (min-width: 768px) {
-  .header-container {
-    margin-bottom: 32px;
-  }
+  padding-top: 18px;
+  padding-bottom: 18px;
+  transition: padding 250ms var(--animation-function);
 }
 
 @media (min-width: 1280px) {
-  .header-container {
-    margin-bottom: 16px;
-  }
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header-section {
+  background-color: var(--white-background-color);
+}
+
+.is-scrolling {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.is-scrolling .header-container {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .logo {
   display: block;
-  padding: 20px 0;
   font-weight: 700;
   font-size: 20px;
   color: var(--primary-text-color);
