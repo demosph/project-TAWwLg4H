@@ -1,0 +1,147 @@
+.application-image-container {
+  display: none;
+  width: 492px;
+  background-color: #4dc274;
+  position: relative;
+  border-radius: 30px;
+}
+
+.application-image-container img {
+  border-radius: 30px 30px 50% 50%;
+  display: block;
+  max-height: 100%;
+  margin-bottom: 20px;
+}
+
+.application-supporting-text {
+  padding: 0 20px;
+}
+
+.application-supporting-text h3 {
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.application-supporting-text p {
+  color: #FFFFFFB2;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form label,
+.form input,
+.form textarea {
+  width: 100%;
+}
+
+.form input,
+.form textarea {
+  border-radius: 12px;
+  padding: 16px 18px;
+  line-height: 24px;
+  border: 1px solid #1214171A;
+}
+
+.form input:active,
+.form input:focus,
+.form textarea:active,
+.form textarea:focus {
+  outline: none;
+  border-color: var(--primary-brand-color);
+}
+
+.form textarea {
+  resize: none;
+}
+
+.form button {
+  width: 100%;
+}
+
+.teacher-container {
+  margin: 14px 0;
+}
+
+.teacher-label {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.teacher-checkbox-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px
+}
+
+.teacher-checkbox-container label {
+  display: flex;
+  align-items: center;
+  width: auto;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  text-align: center;
+
+}
+.teacher-checkbox-container input[type=radio] {
+  flex: none;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  border-radius: 50%;
+}
+
+.teacher-checkbox-container input[type="radio"]:checked {
+  accent-color: var(--primary-brand-color);
+}
+
+.submit-info,
+.submit-info a {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #12141780;
+}
+
+.submit-info a {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+  .application-form-container {
+    padding: 0 102px;
+  }
+
+  .teacher-checkbox-container {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .application-container {
+    display: flex;
+    gap: 32px;
+  }
+
+  .application-image-container {
+    display: block;
+  }
+
+  .application-form-container {
+    width: 50%;
+    padding: 0;
+  }
+}
