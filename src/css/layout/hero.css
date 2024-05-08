@@ -74,7 +74,7 @@
   font-weight: 700;
   line-height: calc(24 / 14);
   letter-spacing: 0;
-  transition: background-color var(--common-transition);
+  transition: background-color var(--animation-function);
 }
 
 .hero-btn:hover,
@@ -93,12 +93,12 @@
   height: 38px;
   background-color: var(--white-background-color);
   border-radius: 50%;
-  transition: background-color var(--common-transition);
+  transition: background-color var(--animation-function);
 }
 
 .down-anchor-icon {
   fill: var(--primary-brand-color);
-  transition: fill var(--common-transition);
+  transition: fill var(--animation-function);
 }
 
 .down-anchor:hover,
