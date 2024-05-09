@@ -42,7 +42,8 @@
 .form textarea {
   border-radius: 12px;
   padding: 15px 17px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 18px;
   border: 1px solid #1214171A;
 }
 
@@ -68,43 +69,65 @@
 }
 
 .teacher-container {
-  margin: 32px 0;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .teacher-label {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 24px;
   font-weight: 600;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 
 .teacher-checkbox-container {
   display: flex;
   flex-direction: column;
-  gap: 16px
+  gap: 8px
 }
 
 .teacher-checkbox-container label {
   display: flex;
   align-items: center;
   width: auto;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: -0.02em;
   text-align: center;
-
+  cursor: pointer;
 }
-.teacher-checkbox-container input[type=radio] {
-  flex: none;
-  width: 24px;
-  height: 24px;
-  margin-right: 8px;
+
+.teacher-checkbox-container input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
+  border: 2px solid #12141733;
+  outline: none;
+  position: relative;
+  padding: 0;
+  cursor: pointer;
+  margin-right: 8px;
 }
 
 .teacher-checkbox-container input[type="radio"]:checked {
-  accent-color: var(--primary-brand-color);
+  border-color: var(--primary-brand-color);
+}
+
+.teacher-checkbox-container input[type="radio"]:checked::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--primary-brand-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .submit-info {
@@ -113,9 +136,9 @@
 
 .submit-info,
 .submit-info a {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 26px;
   color: #12141780;
 }
 
@@ -128,9 +151,35 @@
     padding: 0 102px;
   }
 
+  .form input,
+  .form textarea {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .teacher-container {
+    margin: 32px 0;
+  }
+
+  .teacher-label {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+
   .teacher-checkbox-container {
     flex-direction: row;
     align-items: center;
+    gap: 16px
+  }
+
+  .teacher-checkbox-container label {
+    font-size: 18px;
+  }
+
+  .submit-info,
+  .submit-info a {
+    font-size: 14px;
+    line-height: 24px;
   }
 }
 
