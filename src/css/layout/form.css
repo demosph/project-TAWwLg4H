@@ -32,12 +32,6 @@
   line-height: 1.5;
 }
 
-.form {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-}
-
 .form label,
 .form input,
 .form textarea {
@@ -47,7 +41,7 @@
 .form input,
 .form textarea {
   border-radius: 12px;
-  padding: 16px 18px;
+  padding: 15px 17px;
   line-height: 24px;
   border: 1px solid #1214171A;
 }
@@ -60,6 +54,11 @@
   border-color: var(--primary-brand-color);
 }
 
+.form > label {
+  display: block;
+  margin-bottom: 18px;
+}
+
 .form textarea {
   resize: none;
 }
@@ -69,11 +68,12 @@
 }
 
 .teacher-container {
-  margin: 14px 0;
+  margin: 32px 0;
 }
 
 .teacher-label {
   font-size: 20px;
+  line-height: 24px;
   font-weight: 600;
   margin-bottom: 16px;
 }
@@ -105,6 +105,10 @@
 
 .teacher-checkbox-container input[type="radio"]:checked {
   accent-color: var(--primary-brand-color);
+}
+
+.submit-info {
+  margin-top: 16px;
 }
 
 .submit-info,
