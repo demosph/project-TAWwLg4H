@@ -94,3 +94,8 @@
 .subscription-plan:nth-child(2) .button {
   border: 1px solid rgba(255, 255, 255, 0.4);
 }
+.subscription-plan:nth-child(2) .button:hover,
+.subscription-plan:nth-child(2) .button:focus {
+  background-color: var(--white-background-color);
+  color: var(--primary-brand-color);
+}
