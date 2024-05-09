@@ -141,6 +141,9 @@
         justify-content: baseline;
         gap: 152px;
     }
+    .footer-logo {
+        margin-bottom: 32px;
+    }
     .footer-nav-container {
      margin-top: 0px;
     }
