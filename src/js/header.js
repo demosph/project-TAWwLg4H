@@ -5,10 +5,10 @@ const headerScrollClass = 'is-scrolling';
 const scrollHandler = () => {
   if (window.scrollY > header.offsetTop) {
     header.classList.add(headerScrollClass);
-    main.style.transform = `translateY(${header.offsetHeight}px)`;
+    main.style.marginTop = `${header.offsetHeight}px`;
   } else {
     header.classList.remove(headerScrollClass);
-    main.style.transform = 'translateY(0)';
+    main.style.marginTop = 0;
   }
 };
 
