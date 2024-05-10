@@ -47,6 +47,10 @@
     line-height: 1.28571;
     color: white;
     position: relative;
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
 }
 .footer-nav-link:after {
     content: '';
