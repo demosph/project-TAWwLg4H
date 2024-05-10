@@ -138,7 +138,7 @@
 .submit-info a {
   font-size: 12px;
   font-weight: 400;
-  line-height: 26px;
+  line-height: 1.35em;
   color: #12141780;
 }
 
@@ -179,7 +179,7 @@
   .submit-info,
   .submit-info a {
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.75em;
   }
 }
 
