@@ -101,6 +101,11 @@
   }
 }
 
+.feedback-image {
+  display: block;
+  border-radius: 100%;
+}
+
 .feedback-headline {
   font-weight: 700;
   font-size: 20px;
