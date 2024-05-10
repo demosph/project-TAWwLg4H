@@ -1,0 +1,46 @@
+.teacher {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+  .teacher {
+    gap: 32px;
+  }
+}
+
+.teacher-item {
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .teacher-item {
+    max-width: 272px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .teacher-item {
+    max-width: 232px;
+  }
+}
+
+.teachers-img {
+  display: block;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+}
+
+.teacher-name {
+  margin-bottom: 8px;
+}
+
+
+.teacher-description {
+  font-size: 14px;
+  line-height: 1.7em;
+  color: var(--secondary-text-color);
+}

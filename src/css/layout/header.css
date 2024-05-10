@@ -7,11 +7,6 @@
   transition: padding 250ms var(--animation-function);
 }
 
-@media (min-width: 1280px) {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
 .header-section {
   background-color: var(--white-background-color);
 }

@@ -2,16 +2,30 @@ const header = document.querySelector('.js-header');
 const main = document.querySelector('main');
 const headerScrollClass = 'is-scrolling';
 
-const scrollHandler = () => {
-  if (window.scrollY > header.offsetTop) {
+const toggleHeaderScrollingClass = (isPageScrolled) => {
+  if (isPageScrolled) {
     header.classList.add(headerScrollClass);
-    main.style.transform = `translateY(${header.offsetHeight}px)`;
   } else {
     header.classList.remove(headerScrollClass);
-    main.style.transform = 'translateY(0)';
   }
+}
+
+const toggleMainScrollingStyles = (isPageScrolled) => {
+  if (isPageScrolled) {
+    main.style.marginTop = `${header.offsetHeight}px`;
+  } else {
+    main.style.marginTop = 0;
+  }
+}
+
+const scrollHandler = () => {
+  const isPageScrolled = window.scrollY > header.offsetTop;
+  toggleHeaderScrollingClass(isPageScrolled);
+  toggleMainScrollingStyles(isPageScrolled);
 };
 
 document.addEventListener('DOMContentLoaded', () =>  {
+  scrollHandler();
+
   document.addEventListener('scroll', scrollHandler);
 });

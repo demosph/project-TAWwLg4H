@@ -3,6 +3,7 @@
   const mobileMenuBackdrop = document.querySelector('.js-menu-backdrop');
   const openMenuBtn = document.querySelector('.js-open-menu');
   const closeMenuBtn = document.querySelector('.js-close-menu');
+  const mobileMenuLinks = [...document.getElementsByClassName('mobile-menu-link')];
 
   const toggleMenu = () => {
     const isMenuOpen =
@@ -16,6 +17,9 @@
 
   openMenuBtn.addEventListener('click', toggleMenu);
   closeMenuBtn.addEventListener('click', toggleMenu);
+  mobileMenuLinks.forEach((link) => {
+    link.addEventListener('click', toggleMenu);
+  })
 
   window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
     if (!e.matches) return;

@@ -1,0 +1,114 @@
+.lesson-subscription {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media only screen and (min-width: 768px) {
+  .lesson-subscription {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 48px 32px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .lesson-subscription {
+    gap: 32px;
+  }
+}
+.subscription-plan {
+  border-radius: 30px;
+  border: 1px solid var(--primary-brand-color);
+  background-color: var(--white-background-color);
+  max-width: 336px;
+  padding: 40px 20px;
+}
+.subscription-plan:nth-child(2) {
+  background-color: var(--primary-brand-color);
+  color: var(--white-background-color);
+}
+
+@media only screen and (min-width: 768px) {
+  .subscription-plan {
+    padding: 32px 16px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .subscription-plan {
+    max-width: 320px;
+    padding: 32px;
+  }
+}
+
+.subscription-plan-name {
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--primary-text-color);
+  margin-bottom: 16px;
+}
+.subscription-plan:nth-child(2) .subscription-plan-name {
+  color: var(--white-background-color);
+}
+.subscription-plan-price {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.4em;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--primary-text-color);
+  margin-bottom: 40px;
+}
+.subscription-plan:nth-child(2) .subscription-plan-price {
+  color: var(--white-background-color);
+}
+@media only screen and (min-width: 768px) {
+  .subscription-plan-price {
+    margin-bottom: 32px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .subscription-plan-price {
+    margin-bottom: 16px;
+  }
+}
+.subscription-plan-about {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5em;
+  text-align: center;
+  color: rgba(18, 20, 23, 0.5);
+  margin-bottom: 32px;
+}
+.subscription-plan:nth-child(2) .subscription-plan-about {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+@media only screen and (min-width: 768px) {
+  .subscription-plan-about {
+    font-size: 16px;
+    margin-bottom: 42px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .subscription-plan-about {
+    margin-bottom: 32px;
+  }
+}
+
+.subscription-plan .button {
+  text-align: center;
+  padding: 16px 37px;
+  border: 1px solid var(--primary-brand-color);
+  transition: background-color 250ms var(--animation-function);
+}
+.subscription-plan:nth-child(2) .button {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+.subscription-plan:nth-child(2) .button:hover,
+.subscription-plan:nth-child(2) .button:focus {
+  background-color: var(--white-background-color);
+  color: var(--primary-brand-color);
+}
