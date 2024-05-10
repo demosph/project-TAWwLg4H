@@ -1,10 +1,27 @@
 <section class="section appointment" id="form">
   <div class="container">
-    <h2 class="section-title">Leave an <span class="accent">application</span></h2>
-    <p class="section-description">Please use the form below to contact us. Enter your name, email, and message and we'll get back to you shortly.</p>
+    <h2
+      class="section-title"
+      data-aos="fade-up"
+      data-aos-anchor-placement="bottom-bottom"
+    >
+      Leave an <span class="accent">application</span>
+    </h2>
+    <p
+      class="section-description"
+      data-aos="fade-up"
+      data-aos-anchor-placement="bottom-bottom"
+      data-aos-delay="100"
+    >
+      Please use the form below to contact us. Enter your name, email, and message and we'll get back to you shortly.
+    </p>
 
     <div class="application-container">
-      <div class="application-image-container">
+      <div
+        class="application-image-container"
+        data-aos="fade-up-right"
+        data-aos-anchor-placement="bottom-bottom"
+      >
         <img src="../img/girl.jpg">
         <div class="application-supporting-text">
           <h3>1000</h3>
@@ -14,19 +31,38 @@
         </div>
       </div>
 
-      <div class="application-form-container">
+      <div
+        class="application-form-container"
+        data-aos="fade-up-left"
+        data-aos-anchor-placement="bottom-bottom"
+      >
         <form class="form">
           <label>
-            <input type="text" placeholder="Name" />
+            <input
+              type="text"
+              placeholder="Name"
+              required
+              pattern="[a-zA-Zа-яА-ЯёЁіІїЇєЄ' -]+"
+            />
           </label>
           <label>
-            <input type="email" placeholder="Email" />
+            <input
+              type="email"
+              placeholder="Email"
+              required
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            />
           </label>
           <label>
-            <input type="tel" placeholder="Phone" />
+            <input
+              type="tel"
+              placeholder="Phone"
+              required
+              pattern="\+38[0-9]{10}"
+            />
           </label>
           <label>
-            <textarea rows="3" placeholder="Comment"></textarea>
+            <textarea rows="3" placeholder="Comment" required></textarea>
           </label>
 
           <div class="teacher-container">
