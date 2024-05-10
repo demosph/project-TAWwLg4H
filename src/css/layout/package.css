@@ -1,0 +1,215 @@
+.proposal {
+  background: linear-gradient(90deg, rgba(77,194,116,1) 0%, rgba(190,232,204,1) 100%);
+  border-radius: 30px;
+  padding: 40px 20px 64px;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .proposal {
+    overflow: visible;
+    padding: 64px 18px 92px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .proposal {
+    padding: 64px 64px 140px;
+  }
+}
+
+.proposal-card-backdrop {
+  background: #FFFFFF;
+  border-radius: 16px;
+  padding: 40px 20px;
+}
+
+@media (min-width: 768px) {
+  .proposal-card-backdrop {
+    border-radius: 30px;
+    padding: 64px 185px 64px 32px;
+    position: relative;
+  }
+  .proposal-card-backdrop:after {
+    content: "";
+    width: 214px;
+    height: 263px;
+    background-image: url("../img/books.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 170px;
+    right: -47px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .proposal-card-backdrop {
+    padding: 64px 306px 64px 64px;
+  }
+  .proposal-card-backdrop:after {
+    top: 128px;
+    right: 0;
+  }
+}
+
+.proposal-card {
+  position: relative;
+  z-index: 2;
+}
+
+.proposal-card:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  transform: rotate(11deg);
+  border-radius: 16px;
+  z-index: -2;
+}
+
+.proposal-card:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #D4FDE1;
+  transform: rotate(-9deg);
+  border-radius: 16px;
+  z-index: -4;
+}
+
+@media (min-width: 768px) {
+  .proposal-card:after,
+  .proposal-card:before {
+    border-radius: 30px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .proposal-card:before {
+    transform: rotate(9deg);
+  }
+  .proposal-card:after {
+    transform: rotate(-11deg);
+  }
+}
+
+.title-package {
+  font-size: 38px;
+  line-height: 1.1em;
+  color: #FFFFFF;
+  font-weight: 600;
+  margin-bottom: 65px;
+}
+
+@media (min-width: 768px) {
+  .title-package {
+    font-size: 60px;
+    line-height: 1.2em;
+    margin-bottom: 84px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .title-package {
+    font-size: 60px;
+    line-height: 1.2em;
+    margin-bottom: 133px;
+    max-width: 776px;
+  }
+}
+
+.proposal-card-title {
+  font-size: 20px;
+  line-height: 1.2em;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .proposal-card-title {
+    font-size: 40px;
+    line-height: 1.2em;
+    margin-bottom: 40px;
+  }
+}
+.proposal-list {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.proposal-list li {
+  padding-left: 28px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.45em;
+  letter-spacing: -0.02em;
+  position: relative;
+}
+
+.proposal-list li:before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: var(--primary-brand-color);
+  border-radius: 50%;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.proposal-list li:after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 8px;
+  border-bottom: 2px solid #FFFFFF;
+  border-right: 2px solid #FFFFFF;
+  left: 4px;
+  top: calc(50% - 2px);
+  transform: rotate(45deg) translateY(-50%);
+}
+
+@media (min-width: 768px) {
+  .proposal-list {
+    margin-bottom: 32px;
+  }
+  .proposal-list li {
+    font-size: 20px;
+    padding-left: 44px;
+  }
+  .proposal-list li:before {
+    width: 28px;
+    height: 28px;
+  }
+  .proposal-list li:after {
+    width: 9px;
+    height: 14px;
+    left: 5px;
+    top: calc(50% - 4px);
+  }
+}
+
+@media (min-width: 768px) {
+  .proposal-list {
+    margin-bottom: 40px;
+  }
+}
+
+.proposal-button {
+  display: inline-block;
+  padding: 14px 58px;
+}
+
+.title-package .accent {
+  color: var(--secondary-brand-color);
+}
