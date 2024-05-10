@@ -6,7 +6,7 @@
 }
 
 .section {
-  padding-bottom: 80px;
+  padding: 40px 0;
 }
 
 @media (min-width: 768px) {
@@ -15,9 +15,8 @@
     max-width: 768px;
     padding: 0 32px;
   }
-
   .section {
-    padding-bottom: 100px;
+    padding: 50px 0;
   }
 }
 
@@ -27,9 +26,8 @@
     max-width: 1280px;
     padding: 0 128px;
   }
-
   .section {
-    padding-bottom: 150px;
+    padding: 75px 0;
   }
 }
 

@@ -75,7 +75,7 @@ img {
   }
 }
 
-.text {
+.section-description {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71429;
@@ -85,7 +85,7 @@ img {
 }
 
 @media (min-width: 768px) {
-  .text {
+  .section-description {
     font-size: 18px;
     line-height: 1.66667;
     margin-bottom: 64px;
@@ -93,8 +93,8 @@ img {
 }
 
 @media (min-width: 1280px) {
-  .text {
-    max-width: 665px;
+  .section-description {
+    max-width: 697px;
     margin-right: auto;
     margin-left: auto;
   }

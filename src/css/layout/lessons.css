@@ -20,19 +20,26 @@
   border: 1px solid var(--primary-brand-color);
   background-color: var(--white-background-color);
   max-width: 336px;
+  padding: 40px 20px;
 }
 .subscription-plan:nth-child(2) {
   background-color: var(--primary-brand-color);
   color: var(--white-background-color);
 }
+
+@media only screen and (min-width: 768px) {
+  .subscription-plan {
+    padding: 32px 16px;
+  }
+}
+
 @media only screen and (min-width: 1280px) {
   .subscription-plan {
     max-width: 320px;
+    padding: 32px;
   }
 }
-.plan-content {
-  padding: 32px;
-}
+
 .subscription-plan-name {
   font-weight: 700;
   font-size: 20px;
@@ -77,9 +84,17 @@
 .subscription-plan:nth-child(2) .subscription-plan-about {
   color: rgba(255, 255, 255, 0.7);
 }
+
 @media only screen and (min-width: 768px) {
   .subscription-plan-about {
     font-size: 16px;
+    margin-bottom: 42px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .subscription-plan-about {
+    margin-bottom: 32px;
   }
 }
 
