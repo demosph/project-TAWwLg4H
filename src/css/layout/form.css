@@ -1,0 +1,200 @@
+.application-image-container {
+  display: none;
+  width: 492px;
+  background-color: #4dc274;
+  position: relative;
+  border-radius: 30px;
+}
+
+.application-image-container img {
+  border-radius: 30px 30px 50% 50%;
+  display: block;
+  max-height: 100%;
+  margin-bottom: 20px;
+}
+
+.application-supporting-text {
+  padding: 0 20px;
+}
+
+.application-supporting-text h3 {
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.application-supporting-text p {
+  color: #FFFFFFB2;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.form label,
+.form input,
+.form textarea {
+  width: 100%;
+}
+
+.form input,
+.form textarea {
+  border-radius: 12px;
+  padding: 15px 17px;
+  font-size: 14px;
+  line-height: 18px;
+  border: 1px solid #1214171A;
+}
+
+.form input:active,
+.form input:focus,
+.form textarea:active,
+.form textarea:focus {
+  outline: none;
+  border-color: var(--primary-brand-color);
+}
+
+.form > label {
+  display: block;
+  margin-bottom: 18px;
+}
+
+.form textarea {
+  resize: none;
+}
+
+.form button {
+  width: 100%;
+}
+
+.teacher-container {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.teacher-label {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.teacher-checkbox-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px
+}
+
+.teacher-checkbox-container label {
+  display: flex;
+  align-items: center;
+  width: auto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  cursor: pointer;
+}
+
+.teacher-checkbox-container input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #12141733;
+  outline: none;
+  position: relative;
+  padding: 0;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.teacher-checkbox-container input[type="radio"]:checked {
+  border-color: var(--primary-brand-color);
+}
+
+.teacher-checkbox-container input[type="radio"]:checked::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--primary-brand-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.submit-info {
+  margin-top: 16px;
+}
+
+.submit-info,
+.submit-info a {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.35em;
+  color: #12141780;
+}
+
+.submit-info a {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+  .application-form-container {
+    padding: 0 102px;
+  }
+
+  .form input,
+  .form textarea {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .teacher-container {
+    margin: 32px 0;
+  }
+
+  .teacher-label {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+
+  .teacher-checkbox-container {
+    flex-direction: row;
+    align-items: center;
+    gap: 16px
+  }
+
+  .teacher-checkbox-container label {
+    font-size: 18px;
+  }
+
+  .submit-info,
+  .submit-info a {
+    font-size: 14px;
+    line-height: 1.75em;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .application-container {
+    display: flex;
+    gap: 32px;
+  }
+
+  .application-image-container {
+    display: block;
+  }
+
+  .application-form-container {
+    width: 50%;
+    padding: 0;
+  }
+}
