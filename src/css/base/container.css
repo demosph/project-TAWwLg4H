@@ -5,11 +5,19 @@
   padding: 0 20px;
 }
 
+.section {
+  padding-bottom: 80px;
+}
+
 @media (min-width: 768px) {
   .container,
   .container-fluid {
     max-width: 768px;
     padding: 0 32px;
+  }
+
+  .section {
+    padding-bottom: 100px;
   }
 }
 
@@ -18,6 +26,10 @@
   .container-fluid {
     max-width: 1280px;
     padding: 0 128px;
+  }
+
+  .section {
+    padding-bottom: 150px;
   }
 }
 

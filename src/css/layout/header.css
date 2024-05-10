@@ -1,0 +1,160 @@
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  transition: padding 250ms var(--animation-function);
+}
+
+@media (min-width: 1280px) {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header-section {
+  background-color: var(--white-background-color);
+}
+
+.is-scrolling {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.is-scrolling .header-container {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.logo {
+  display: block;
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--primary-text-color);
+}
+
+.logo-accent {
+  color: var(--primary-brand-color);
+}
+
+.main-navigation {
+  display: none;
+}
+
+@media (min-width: 1280px) {
+  .main-navigation {
+    display: flex;
+    align-items: center;
+  }
+  .site-nav {
+    display: flex;
+    gap: 20px;
+  }
+  .nav-link {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.28571;
+    color: var(--primary-text-color);
+    position: relative;
+  }
+
+  .nav-link:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 37px;
+    height: 2px;
+    background-color: var(--primary-brand-color);
+    border-radius: 2px;
+    opacity: 0;
+    transition: opacity 250ms var(--animation-function);
+  }
+}
+
+.nav-link:hover:after,
+.nav-link:focus:after {
+  opacity: 1;
+}
+
+.header-social {
+  display: none;
+}
+
+@media (min-width: 1280px) {
+  .header-social {
+    display: flex;
+    gap: 12px;
+  }
+  .header-social-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 8px;
+    border: 1px solid rgba(18, 20, 23, 0.1);
+    border-radius: 10px;
+    padding: 8px;
+    width: 44px;
+    height: 44px;
+    transition: border 250ms var(--animation-function);
+  }
+
+  .header-social-link:hover,
+  .header-social-link:focus {
+    border: 1px solid rgba(77, 194, 116, 0.1);
+  }
+  .header-social-link .social-icon {
+    width: 28px;
+    height: 28px;
+    fill: rgba(18, 20, 23, 0.8);
+    transition: fill 250ms var(--animation-function);
+  }
+  .header-social-link:hover .social-icon,
+  .header-social-link:focus .social-icon {
+    fill: rgba(77, 194, 116, 0.8);
+  }
+}
+
+.header-container .menu-toggle {
+  height: 32px;
+  width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+.mobile-menu-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.tablet-menu-icon {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .mobile-menu-icon {
+    display: none;
+  }
+
+  .tablet-menu-icon {
+    display: block;
+    width: 40px;
+    height: 28px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .header-container .menu-toggle {
+    display: none;
+  }
+}

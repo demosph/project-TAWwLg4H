@@ -5,4 +5,5 @@
   --secondary-brand-color: #bee8cc;
   --pressed-state-color: #38ae5f;
   --white-background-color: #fff;
+  --animation-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
