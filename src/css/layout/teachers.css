@@ -1,11 +1,18 @@
-.main-div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* height: 100vh; */
-    
+@media (min-width: 1280px) {
+    .container, .container-fluid {
+        max-width: 1280px;
+        padding: 0 128px;
+    }
 }
+.section-teachers-title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.125;
+    letter-spacing: -.02em;
+    text-align: center;
+    color: var(--primary-text-color);
+    margin-bottom: 16px;
+} 
 
 ul li{
     list-style: none;
@@ -20,19 +27,32 @@ li img{
     margin-bottom: 16px;
 }
 
-.our-teachers{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+.section-teachers-title .accent {
+    position: relative;
 }
-
+.section-teachers-title .accent:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    width: 100%;
+    height: 12px;
+    background-color: var(--secondary-brand-color);
+    border-radius: 8px;
+    z-index: -1;
+}
 .teacher{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin-right: 32px;
+    gap: 32px;
+    margin-top: 64px;
+}
+
+.teacher-item {
+    max-width: 232px;
 }
 
 h3{
@@ -57,31 +77,8 @@ h2{
 
 .block-description{
     text-align: center;
+    margin-top: 16px;
 }
-
-/* .text{
-    position: relative;
-    z-index: 1;
-}
-
-
-h1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-
-.green-background {
-    position: absolute;
-    top: 28px;
-    z-index: 0;
-    width: 100%;
-    height: 10px; 
-    border-radius: 8px;
-    background: #BEE8CC;
-} */
-
 
 h2 {
     position: relative;
@@ -92,20 +89,16 @@ h2 {
     z-index: 1;
 }
 
-.green-background {
-    position: absolute;
-    bottom: 0px;
-    right: 0;
-    width: 142px;
-    height: 20px;
-    z-index: 0;
-    background-color: #BEE8CC;
-    border-radius: 8px;
+
+@media only screen and (min-width: 1280px) {
+    .teacher {
+        gap: 32px;
+    }
 }
 
-@media(max-width: 1178px){
-    .our-teachers{
+@media only screen and (min-width: 768px) {
+    .teacher {
+        flex-direction: row;
         flex-wrap: wrap;
-        width: 70%;
     }
 }
