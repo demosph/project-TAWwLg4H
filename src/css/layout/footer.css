@@ -19,21 +19,21 @@
     color: white;
     margin-bottom: 20px;
 }
-.footer-contacts{
+.footer-contacts {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
-.footer-address-text, .footer-tel-text{
+.footer-address-text, .footer-tel-text {
     margin-bottom: 4px;
 }
-.footer-address-link, .footer-telephone-link{
+.footer-address-link, .footer-telephone-link {
     color: white;
 }
-.footer-address a:hover,  .footer-contacts a:hover{
+.footer-address a:hover,  .footer-contacts a:hover {
     text-decoration: underline;
 }
-.footer-nav-container{
+.footer-nav-container {
     margin-top: 40px;
 }
 .footer-nav-list{
@@ -64,11 +64,11 @@
 .footer-nav-link:focus:after {
     opacity: 1;
 }
-.footer-sm-container{
+.footer-sm-container {
     margin-top: 40px;
     margin-bottom: 40px;
 }
-.footer-sm-list{
+.footer-sm-list {
     display: flex;
     gap: 12px;
 }
@@ -99,11 +99,11 @@
 .footer-social-link:focus .social-icon {
     fill: rgba(77, 194, 116, 0.8);
 }
-.footer-endline-container{
+.footer-endline-container {
     padding-top: 20px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
-.footer-privacy-terms-list{
+.footer-privacy-terms-list {
     display: flex;
     gap: 18px;
     margin-top: 14px;
@@ -117,7 +117,7 @@
 .footer-privacy-items a:hover {
     text-decoration: underline;
 }
-.footer-privacy-link, .footer-terms-link{
+.footer-privacy-link, .footer-terms-link {
     color: rgba(255, 255, 255, 0.6);
 }
 
@@ -131,24 +131,23 @@
     .footer-top-container{
         display: flex;
         flex-direction: row;
-        justify-content: baseline;
         justify-content: space-between;
         margin-bottom: 110px;
     }
-    .footer-top-container-left{
+    .footer-top-container-left {
         display: flex;
         flex-direction: row;
-        justify-content: baseline;
+        justify-content: space-between;
         gap: 152px;
     }
     .footer-logo {
         margin-bottom: 32px;
     }
     .footer-nav-container {
-     margin-top: 0px;
+     margin-top: 0;
     }
     .footer-sm-container {
-        margin: 0px;
+        margin: 0;
     }
     .footer-social-link {
         width: 44px;
