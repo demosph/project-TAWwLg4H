@@ -1,14 +1,1 @@
-@import url('./base/variables.css');
-@import url('./base/common.css');
-@import url('./base/container.css');
-@import url('layout/header.css');
-@import url('layout/hero.css');
-@import url('layout/about.css');
-@import url('layout/lessons.css');
-@import url('layout/package.css');
-@import url('layout/teachers.css');
-@import url('layout/form.css');
-@import url('layout/feedback.css');
-@import url('layout/footer.css');
-@import url('layout/menu.css');
-@import url('layout/modal.css');
+@import url(base/variables.css);@import url(base/common.css);@import url(base/container.css);@import url(layout/header.css);@import url(layout/hero.css);@import url(layout/about.css);@import url(layout/lessons.css);@import url(layout/package.css);@import url(layout/teachers.css);@import url(layout/form.css);@import url(layout/feedback.css);@import url(layout/footer.css);@import url(layout/menu.css);@import url(layout/modal.css);

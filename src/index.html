@@ -20,8 +20,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" fetchpriority="high" href="https://unpkg.com/aos@2.3.1/dist/aos.css" type="text/css">
+
+
+    <link rel="preload" fetchpriority="high" as="image" href="../../img/hero-mobile@2x-2.webp" type="image/webp">
+    <link rel="preload" fetchpriority="high" as="image" href="../../img/hero-mobile.webp" type="image/webp">
+
     <link rel="stylesheet" type="text/css" href="./css/index.css" />
+
   </head>
   <body class="body">
     <load src="partials/header.html" />
