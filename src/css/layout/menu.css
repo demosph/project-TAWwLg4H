@@ -116,6 +116,7 @@
   background-color: rgba(18, 20, 23, 0.4);
   transform: translate(100%);
   transition: transform 350ms var(--animation-function);
+  z-index: 10;
 }
 
 .menu-backdrop.is-open {
