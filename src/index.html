@@ -21,15 +21,16 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" fetchpriority="high" href="https://unpkg.com/aos@2.3.1/dist/aos.css" type="text/css">
-
-
-    <link rel="preload" fetchpriority="high" as="image" href="../../img/hero-mobile@2x-2.webp" type="image/webp">
-    <link rel="preload" fetchpriority="high" as="image" href="../../img/hero-mobile.webp" type="image/webp">
-
+    <link rel="preload" fetchpriority="high" as="image" href="./img/hero-mobile@2x.webp" type="image/webp" media="(max-width: 768px)">
+    <link rel="preload" fetchpriority="high" as="image" href="./img/hero-mobile.webp" type="image/webp" media="(max-width: 768px)">
     <link rel="stylesheet" type="text/css" href="./css/index.css" />
-
   </head>
   <body class="body">
+    <button aria-label="scroll-top button" id="scroll-to-top" class="scroll-to-top">
+      <svg class="scroll-to-top-icon" width="20" height="20">
+        <use href="./img/icons.svg#icon-up-arrow"></use>
+      </svg>
+    </button>
     <load src="partials/header.html" />
     <main>
       <load src="partials/hero.html" />

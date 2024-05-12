@@ -39,7 +39,7 @@
         rgba(0, 0, 0, 0.4) 39.23%,
         rgba(0, 0, 0, 0) 66.28%
       ),
-      url('../../img/hero-mobile@2x-2.webp');
+      url('../../img/hero-mobile@2x.webp');
   }
 
   @media screen and (min-width: 768px) {
