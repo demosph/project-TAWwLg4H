@@ -3,4 +3,3 @@ import './js/menu.js';
 import './js/header.js';
 import './js/modal.js';
 o.init({ once: !0 });
-import './js/scroll-top.js';
