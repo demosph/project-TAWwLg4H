@@ -1,8 +1,5 @@
-import AOS from 'aos';
-import './js/menu';
+import o from 'aos';
+import './js/menu.js';
 import './js/header.js';
 import './js/modal.js';
-
-AOS.init({
-  once: true,
-});
+o.init({ once: !0 });
